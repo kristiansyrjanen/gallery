@@ -3,26 +3,26 @@ baseurl: "/home"
 #baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
-#google_analytics: "UA-46465113-2"
+#google_analytics: ""
 
 # UI configs
-title: "life through my lens"
-subtitle: "frames that make my day..."
+title: "Galleria della natura"
+subtitle: "e un po' di tecnologia"
 author: "Kristian Syrjänen"
 header:
  title: "wall of grain"
  subtitle: "by Kristian Syrjänen"
 footer:
  name: "they call me kristian"
- bio: "i am a father of two beautiful girls. i love to play games, build custom keyboards and take a picture or two once in a while..."
- github: "my github is <a href=\"https://github.com/kristiansyrjanen\">here</a>"
+ bio: "I am a father of two beautiful girls. I love playing video games, building custom keyboards and taking a picture or two once in a while..."
+ github: "My github is <a href=\"https://github.com/kristiansyrjanen\">here</a>"
 web_design: "AJ"
 # Configure which exif data to display
 # Tag is the actual exif tag, icon is a fontawesome icon. Use JSON notation without line breaks
 exif: '[{"tag": "Model", "icon": "camera-retro"}, {"tag": "FNumber", "icon": "dot-circle-o"}, {"tag": "ExposureTime", "icon": "clock-o"}, {"tag": "ISOSpeedRatings", "icon": "info-circle"}]'
 social_urls:
-  #twitter: "https://www.twitter.com/ram__patra"
-  #instagram: "https://www.instagram.com/ram_patra"
-  #dribbble: "https://dribbble.com/rampatra"
+  #twitter: "https://www.twitter.com/"
+  #instagram: "https://www.instagram.com/"
+  #dribbble: "https://dribbble.com/"
   linkedin: "https://in.linkedin.com/in/kristiansyrjanen"
   github: "https://www.github.com/kristiansyrjanen"
