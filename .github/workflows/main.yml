@@ -24,9 +24,11 @@ jobs:
       run: JEKYLL_ENV=production bundle exec jekyll build
     
     - name: Upload site to FTP.
-      env: 
-        ftp_location: ${{ secrets.ftp_location }}
-        ftp_username: ${{ secrets.ftp_username }}
-        ftp_password: ${{ secrets.ftp_sshkey }} 
-      run: |
-        scp -i $ftp_sshkey -r /gallery/_site/ $ftp_username@$ftp_location:/home/ubuntu/_site/
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.ftp_location }}
+        username: ${{ secrets.ftp_username }}
+        key: ${{ secrets.ftp_sshkey }}
+        source: /gallery/_site/
+        target: /_site/
+        timeout: 5m
