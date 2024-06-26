@@ -33,3 +33,4 @@ jobs:
         source: /gallery/_site/
         target: /_site/
         timeout: 5m
+        debug: true
