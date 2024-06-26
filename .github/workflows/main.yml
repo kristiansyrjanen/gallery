@@ -27,6 +27,6 @@ jobs:
       env: 
         ftp_location: ${{ secrets.ftp_location }}
         ftp_username: ${{ secrets.ftp_username }}
-        ftp_password: ${{ secrets.ftp_password }} 
+        ftp_password: ${{ secrets.ftp_sshkey }} 
       run: |
         scp -i $ftp_sshkey /gallery/_site/* $ftp_username@$ftp_location:/home/ubuntu/_site/
