@@ -23,12 +23,13 @@ jobs:
     - name: Build Site with Jekyll.
       run: JEKYLL_ENV=production bundle exec jekyll build
     
-    - name: Upload site to FTP.
+    - name: Upload site to Server
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
         source: /gallery/_site/
         target: /_site/
         timeout: 5m
