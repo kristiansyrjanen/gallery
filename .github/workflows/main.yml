@@ -29,4 +29,4 @@ jobs:
         ftp_username: ${{ secrets.ftp_username }}
         ftp_password: ${{ secrets.ftp_sshkey }} 
       run: |
-        scp -i $ftp_sshkey /gallery/_site/* $ftp_username@$ftp_location:/home/ubuntu/_site/
+        scp -i $ftp_sshkey -r /gallery/_site/ $ftp_username@$ftp_location:/home/ubuntu/_site/
